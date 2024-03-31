@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import openpyxl
 
 # Function to calculate quality score in percentage
 def calculate_quality_score_percentage(critical_errors, non_critical_errors, sample):
