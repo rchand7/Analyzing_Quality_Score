@@ -140,9 +140,6 @@ def main():
                     st.table(critical_comments)
                     st.write(f"Error Count: {len(critical_comments)}")
 
-    else:
-        st.error("The uploaded file does not contain an 'Emp Name' column.")
-
 # Run the app
 if __name__ == "__main__":
     main()
