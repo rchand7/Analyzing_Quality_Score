@@ -141,6 +141,34 @@ def main():
                     st.table(critical_comments)
                     st.write(f"Error Count: {len(critical_comments)}")
 
-# Run the app
+# Your existing quality analyzer code goes here
+    # Replace this with your quality analyzer code
+    # Embed the chatbot HTML code using components.html
+    chatbot_html = """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Chatbot demo</title>
+        <style>
+            .chatbot-container {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                z-index: 9999;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="chatbot-container">
+            <iframe width="350" height="280" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/69375775-1b0c-46de-87f9-3cd10bb4fba7"></iframe>
+        </div>
+    </body>
+    </html>
+    """
+    st.components.v1.html(chatbot_html, height=390)
+
 if __name__ == "__main__":
     main()
+
+# Run the app
+
